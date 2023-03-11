@@ -2,8 +2,8 @@ import os
 import openai
 import telebot
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 bot = telebot.TeleBot(os.getenv('ACCESS_TOKEN'))
 openai.api_key = os.getenv('OPENAI_API_KEY')
